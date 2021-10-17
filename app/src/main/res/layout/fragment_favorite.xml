@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_black"
+    tools:context=".ui.main.profile_frag.FavoriteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fav_frag_empty_const"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/_50mdp"
+        android:padding="@dimen/_5mdp">
+
+        <ImageView
+            android:id="@+id/fav_frag_empty_box_img"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="@dimen/_100mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_box" />
+        <TextView
+            android:id="@+id/fav_frag_resultOfSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10mdp"
+            android:gravity="center"
+            android:hint="Did not find any movie "
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:padding="@dimen/_10mdp"
+            android:layout_margin="@dimen/_10mdp"
+            android:textSize="@dimen/_12mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fav_frag_empty_box_img" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10mdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/favorite_rv"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.main.best.BestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_black">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bestFrag_topRated_guide15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_begin="@dimen/_15mdp"
+            android:orientation="vertical" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bestFrag_topRated_guide15End"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_end="@dimen/_15mdp"
+            android:orientation="vertical" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bestFrag_topRated_const"
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toLeftOf="@id/bestFrag_topRated_guide15"
+            app:layout_constraintStart_toStartOf="@id/bestFrag_topRated_guide15"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@id/bestFrag_topRated_guide15End"
+            app:layout_constraintEnd_toEndOf="@id/bestFrag_topRated_guide15End"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bestFrag_topRated_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Top Rated"
+                android:textSize="@dimen/_12mdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bestFrag_topRated_rv"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bestFrag_topRated_title_tv"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bestFrag_popular_const"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_10mdp"
+            app:layout_constraintLeft_toLeftOf="@id/bestFrag_topRated_guide15"
+            app:layout_constraintStart_toStartOf="@id/bestFrag_topRated_guide15"
+            app:layout_constraintTop_toBottomOf="@id/bestFrag_topRated_const"
+            app:layout_constraintRight_toRightOf="@id/bestFrag_topRated_guide15End"
+            app:layout_constraintEnd_toEndOf="@id/bestFrag_topRated_guide15End"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bestFrag_popular_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Popular"
+                android:textSize="@dimen/_12mdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+             <TextView
+                 android:id="@+id/bestFrag_popular_viewMore_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="View more"
+                android:textSize="@dimen/_10mdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bestFrag_popular_rv"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_width="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bestFrag_popular_title_tv"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bestFrag_trending_const"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_10mdp"
+            app:layout_constraintLeft_toLeftOf="@id/bestFrag_topRated_guide15"
+            app:layout_constraintStart_toStartOf="@id/bestFrag_topRated_guide15"
+            app:layout_constraintTop_toBottomOf="@id/bestFrag_popular_const"
+            app:layout_constraintRight_toRightOf="@id/bestFrag_topRated_guide15End"
+            app:layout_constraintEnd_toEndOf="@id/bestFrag_topRated_guide15End"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bestFrag_trending_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Trending"
+                android:textSize="@dimen/_12mdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+             <TextView
+                 android:id="@+id/bestFrag_trending_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="View more"
+                android:textSize="@dimen/_10mdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bestFrag_trending_rv"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bestFrag_trending_title_tv"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/bestFrag_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

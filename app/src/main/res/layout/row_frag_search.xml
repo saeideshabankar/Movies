@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5mdp">
+
+        <com.rishabhharit.roundedimageview.RoundedImageView
+            android:id="@+id/search_frag_poster_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130mdp"
+            android:scaleType="centerCrop"
+           android:src="@drawable/whats"
+            app:cornerRadius="@dimen/_7mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10mdp"
+            android:paddingRight="@dimen/_20mdp"
+            android:layout_marginLeft="@dimen/_20mdp"
+            android:layout_marginRight="@dimen/_20mdp"
+            android:background="@drawable/bg_row_popular_img"
+            app:layout_constraintBottom_toBottomOf="@id/search_frag_poster_img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_frag_poster_img">
+
+            <TextView
+                android:id="@+id/search_frag_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Name:"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/search_frag_releaseData_txt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/search_frag_releaseData_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:text="Release data:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/search_frag_original_language_txt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/search_frag_title_txt" />
+
+            <TextView
+                android:id="@+id/search_frag_original_language_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Original language :"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10mdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5mdp"
+                app:layout_constraintBottom_toTopOf="@id/search_frag_adults_txt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/search_frag_releaseData_txt" />
+
+            <TextView
+                android:id="@+id/search_frag_adults_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Adults :"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_5mdp"
+                android:textSize="@dimen/_10mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/search_frag_popularity_txt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/search_frag_original_language_txt" />
+
+            <TextView
+                android:id="@+id/search_frag_popularity_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Popularity :"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10mdp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_5mdp"
+                android:layout_marginTop="@dimen/_5mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/search_frag_adults_txt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

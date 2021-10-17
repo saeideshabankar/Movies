@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/BestFragment">
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.movies.ui.main.profile_frag.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_ProfileFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.example.movies.ui.main.search_frag.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_SearchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TrendingFragment"
+        android:name="com.example.movies.ui.main.trending_frag.TrendingFragment"
+        android:label="fragment_trending"
+        tools:layout="@layout/fragment_best_to_all" >
+        <action
+            android:id="@+id/action_TrendingFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.movies.ui.main.details_frag.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.movies.ui.main.profile_frag.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BestFragment"
+        android:name="com.example.movies.ui.main.best.BestFragment"
+        android:label="fragment_best"
+        tools:layout="@layout/fragment_best" >
+        <action
+            android:id="@+id/action_bestFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+        <action
+            android:id="@+id/action_bestFragment_to_topRatedMovieFragment"
+            app:destination="@id/topRatedMovieFragment" />
+        <action
+            android:id="@+id/action_bestFragment_to_TrendingFragment"
+            app:destination="@id/TrendingFragment" />
+        <action
+            android:id="@+id/action_BestFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.example.movies.ui.main.popular_frag.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_best_to_all" >
+        <action
+            android:id="@+id/action_PopularFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/topRatedMovieFragment"
+        android:name="com.example.movies.ui.main.top_rated_fragment.TopRatedMovieFragment"
+        android:label="TopRatedMovieFragment"
+        tools:layout="@layout/fragment_best_to_all">
+        <action
+            android:id="@+id/action_topRatedMovieFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>

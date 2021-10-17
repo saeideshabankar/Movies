@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar1"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/light_black">
+
+    <ImageView
+        android:id="@+id/toolbar1_back_img"
+        android:layout_width="@dimen/_24mdp"
+        android:layout_height="@dimen/_24mdp"
+        android:layout_marginEnd="@dimen/_10mdp"
+        android:layout_marginRight="@dimen/_10mdp"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:layout_marginLeft="@dimen/_10mdp"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/toolbar1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15mdp"
+        android:layout_marginLeft="@dimen/_15mdp"
+        android:layout_marginEnd="@dimen/_15mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:text="salam"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12mdp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/toolbar1_img_menu"
+        android:layout_width="@dimen/_24mdp"
+        android:layout_height="@dimen/_24mdp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/_15mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+    <TextView
+        android:id="@+id/toolbar1_favorite_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_15mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="Favorite list"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12mdp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.Toolbar>

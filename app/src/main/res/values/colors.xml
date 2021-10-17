@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+<!-- Night theme-->
+    <color name="purple_blue_heavy">#52057b</color>
+    <color name="purple_blue_middle">#892cdc</color>
+    <color name="purple_blue_light">#bc6ff1</color>
+<!-- Day theme-->
+
+    <color name="light_black">#060c1a</color>
+    <color name="light_gray">#202430</color>
+    <color name="light_gray_alpha">#A6202430</color>
+
+    <!--for success btn-->
+    <color name="purple_pink_light">#c5495f</color>
+    <color name="purple_pink_very_light">#f8a1d1</color>
+    <color name="bg_txt_white">#8e929e</color>
+    <color name="bg_txt_white_transparent">#978E929E</color>
+
+
+ <!-- Bg btn sign up-->
+    <color name="purple_pink_bg_light">#ED973069</color>
+    <color name="purple_pink_bg_light_alpha">#92973069</color>
+<!-- Toolbar-->
+    <color name="purple_pink_bg_toolbar">#870F52</color>
+    <color name="middle_blk">#434242</color>
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".ui.login_register.LoginFragment">
+
+
+    <EditText
+        android:id="@+id/login_email_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35mdp"
+        android:layout_marginLeft="@dimen/_15mdp"
+        android:layout_marginTop="@dimen/_30mdp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="@dimen/_10mdp"
+        android:paddingStart="@dimen/_10mdp"
+        android:paddingLeft="@dimen/_10mdp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_btn_edt_light_purple_signup"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_10mdp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_pass_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35mdp"
+        android:layout_marginLeft="@dimen/_15mdp"
+        android:layout_marginTop="@dimen/_20mdp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="@dimen/_10mdp"
+        android:hint="Password"
+        android:paddingStart="@dimen/_10mdp"
+        android:paddingLeft="@dimen/_10mdp"
+        android:background="@drawable/bg_btn_edt_light_purple_signup"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_10mdp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/login_email_txt"
+        app:layout_constraintStart_toStartOf="@id/login_email_txt"
+        app:layout_constraintTop_toBottomOf="@id/login_email_txt" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45mdp"
+        app:layout_constraintTop_toBottomOf="@id/login_pass_txt"
+        android:layout_margin="@dimen/_15mdp"
+        app:cornerRadius="@dimen/_10mdp"
+        android:gravity="center"
+        android:text="Sign in"
+        android:backgroundTint="@color/purple_pink_light"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12mdp"/>
+
+  <!--  <TextView
+        android:id="@+id/login_create_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:text="Do you want to create an account?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10mdp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_15mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:padding="@dimen/_7mdp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="@id/login_pass_txt"
+        app:layout_constraintStart_toStartOf="@id/login_pass_txt"
+        app:layout_constraintTop_toBottomOf="@id/login_login_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45mdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/login_create_tv"
+        android:layout_marginLeft="@dimen/_15mdp"
+        android:layout_marginRight="@dimen/_15mdp"
+        android:layout_marginTop="@dimen/_5mdp"
+        app:cornerRadius="@dimen/_10mdp"
+        android:text="Create Account"
+        android:backgroundTint="@color/purple_pink_light"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12mdp"/>
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

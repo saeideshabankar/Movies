@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5mdp"
+    android:layout_margin="@dimen/_5mdp"
+    android:background="@drawable/bg__best_top_rated_shape">
+
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/row_fav_adapter_profile_Img"
+        android:layout_width="@dimen/_70mdp"
+        android:layout_height="@dimen/_70mdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/spin_arena_small4"
+        app:cornerRadius="@dimen/_7mdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/row_fav_adapter_profile_Img"
+        app:layout_constraintStart_toEndOf="@id/row_fav_adapter_profile_Img"
+        android:layout_margin="@dimen/_10mdp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/fav_result_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Title:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10mdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fav_release_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/_7mdp"
+            android:text="Release data  :"
+            android:textColor="@color/bg_txt_white"
+            android:textSize="@dimen/_10mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fav_result_title_txt" />
+
+
+        <TextView
+            android:id="@+id/fav_result_releaseData_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5mdp"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="@id/fav_release_txt"
+            android:text="Release Data:"
+            android:textColor="@color/bg_txt_white"
+            android:textSize="@dimen/_8mdp"
+            app:layout_constraintStart_toEndOf="@id/fav_release_txt"
+            app:layout_constraintLeft_toRightOf="@id/fav_release_txt"
+            app:layout_constraintTop_toTopOf="@id/fav_release_txt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fav_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_pink_light"
+        android:clickable="true"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/_5mdp"
+        app:cornerRadius="@dimen/_15mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

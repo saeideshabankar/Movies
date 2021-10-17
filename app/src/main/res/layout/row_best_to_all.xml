@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5mdp"
+    android:background="@drawable/bg__best_top_rated_shape">
+
+    <ProgressBar
+        android:id="@+id/row_best_to_all_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/row_best_to_all_posterImg"
+        app:layout_constraintBottom_toBottomOf="@id/row_best_to_all_posterImg"
+        app:layout_constraintStart_toStartOf="parent" />
+    <com.rishabhharit.roundedimageview.RoundedImageView
+        android:id="@+id/row_best_to_all_posterImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/whats"
+        app:cornerRadius="@dimen/_10mdp"
+        app:layout_constraintDimensionRatio="h,5:1.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_5mdp"
+        app:layout_constraintTop_toBottomOf="@id/row_best_to_all_posterImg"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/row_best_to_all_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:layout_marginLeft="@dimen/_10mdp"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxLength="27"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12font_mdp"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/_10mdp"
+            android:layout_marginEnd="@dimen/_10mdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/row_best_to_all_rated_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10mdp"
+            android:layout_marginLeft="@dimen/_10mdp"
+            android:drawablePadding="@dimen/_3mdp"
+            android:gravity="center_vertical"
+            android:maxLength="27"
+            android:layout_marginRight="@dimen/_10mdp"
+            android:layout_marginEnd="@dimen/_10mdp"
+            android:layout_marginTop="@dimen/_5mdp"
+            android:textColor="@color/bg_txt_white"
+            android:textSize="@dimen/_10font_mdp"
+            app:drawableLeftCompat="@drawable/ic_baseline_star_rate_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_best_to_all_title_tv" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/row_best_to_all_detailsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10font_mdp"
+            app:cornerRadius="@dimen/_15mdp"
+            app:backgroundTint="@color/purple_pink_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/_5mdp"
+            android:layout_marginStart="@dimen/_5mdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
